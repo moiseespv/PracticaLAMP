@@ -16,7 +16,7 @@
 
 # Script de aprovisionamiento apache:
 
-[Uploading# Primero actualizamos los paquetes e instalamos apache2 y php
+# Primero actualizamos los paquetes e instalamos apache2 y php
 
 sudo apt update
 sudo apt install apache2 -y
@@ -47,7 +47,7 @@ sudo systemctl restart apache2
 
 # Script de aprovisionamiento Mysql:
 
-[Uploading #Actualizamos los repositorios e instalamos mysql-server y las net-tools
+# Actualizamos los repositorios e instalamos mysql-server y las net-tools
 
 sudo apt-get update
 sudo apt-get install -y mysql-server
@@ -76,7 +76,7 @@ EOF
 
 sudo sed -i "s/^bind-address[[:space:]]*=.*/bind-address = 192.168.56.3/" /etc/mysql/mysql.conf.d/mysqld.cnf
 
-#Reiniciamos el servicio mysql para que se guarden todos los cambios
+# Reiniciamos el servicio mysql para que se guarden todos los cambios
 
 sudo systemctl restart mysqlaprov_mysql.sh…]()
 
